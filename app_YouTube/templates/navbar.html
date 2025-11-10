@@ -4,6 +4,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
+
   
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
@@ -19,15 +21,16 @@
             </ul>
           </li>
   
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-camera-video"></i> Video</a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Agregar Video</a></li>
-              <li><a class="dropdown-item" href="#">Ver Video</a></li>
-              <li><a class="dropdown-item" href="#">Actualizar Video</a></li>
-              <li><a class="dropdown-item" href="#">Borrar Video</a></li>
+              <li><a class="dropdown-item" href="{% url 'agregar_video' %}">Agregar Video</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_video' %}">Ver Video</a></li>
             </ul>
           </li>
+          
+          
   
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-list-check"></i> Playlist</a>
